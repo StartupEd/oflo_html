@@ -325,7 +325,7 @@
           e.preventDefault();
           const email = document.getElementById("waitlistEmail").value;
 
-          fetch("/api/v1/waitlist", {
+          fetch("https://app.oflo.ai/api/v1/waitlist", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
