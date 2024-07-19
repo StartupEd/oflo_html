@@ -256,7 +256,8 @@
                 email: document.getElementById('email').value,
                 company_size: parseInt(document.getElementById('company_size').value),
                 message: document.getElementById('message').value,
-                receive_updates: document.getElementById('receive_updates').checked
+                receive_updates: document.getElementById('receive_updates').checked,
+                domain: window.location.href
             };
 
             fetch('https://app.oflo.ai/api/v1/contact', {
