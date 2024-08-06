@@ -28,8 +28,13 @@ module.exports = {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-100px)' },
         }
-      }      
+      }
     },
+  },
+  variants: {
+    extend: {
+      display: ['group-hover'], // Ensure this is enabled
+    }
   },
   plugins: [
     require('@tailwindcss/forms'),

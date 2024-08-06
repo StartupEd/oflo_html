@@ -14,3 +14,6 @@
 [x-cloak=""] {
     display: none;
 }
+.show {
+    display: block !important; /* Force visibility */
+}

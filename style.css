@@ -1014,7 +1014,7 @@ select{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-:is(.dark .btn)::before,:is(.dark 
+:is(.dark .btn)::before,:is(.dark
 .btn-sm)::before{
   content: var(--tw-content);
   --tw-shadow: 0px 2px 0px 0px rgb(3 7 18 / .16) inset;
@@ -1085,29 +1085,29 @@ input[type="search"]::-webkit-search-results-decoration {
   --tw-ring-offset-width: 0px;
 }
 
-:is(.dark .form-input),:is(.dark 
-.form-textarea),:is(.dark 
-.form-multiselect),:is(.dark 
-.form-select),:is(.dark 
-.form-checkbox),:is(.dark 
+:is(.dark .form-input),:is(.dark
+.form-textarea),:is(.dark
+.form-multiselect),:is(.dark
+.form-select),:is(.dark
+.form-checkbox),:is(.dark
 .form-radio){
   background-color: rgb(17 24 39 / 0.5);
 }
 
-:is(.dark .form-input:hover),:is(.dark 
-.form-textarea:hover),:is(.dark 
-.form-multiselect:hover),:is(.dark 
-.form-select:hover),:is(.dark 
-.form-checkbox:hover),:is(.dark 
+:is(.dark .form-input:hover),:is(.dark
+.form-textarea:hover),:is(.dark
+.form-multiselect:hover),:is(.dark
+.form-select:hover),:is(.dark
+.form-checkbox:hover),:is(.dark
 .form-radio:hover){
   background-color: rgb(17 24 39 / 0.6);
 }
 
-:is(.dark .form-input:focus),:is(.dark 
-.form-textarea:focus),:is(.dark 
-.form-multiselect:focus),:is(.dark 
-.form-select:focus),:is(.dark 
-.form-checkbox:focus),:is(.dark 
+:is(.dark .form-input:focus),:is(.dark
+.form-textarea:focus),:is(.dark
+.form-multiselect:focus),:is(.dark
+.form-select:focus),:is(.dark
+.form-checkbox:focus),:is(.dark
 .form-radio:focus){
   background-color: rgb(17 24 39 / 0.8);
 }
@@ -1134,9 +1134,9 @@ input[type="search"]::-webkit-search-results-decoration {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
-:is(.dark .form-input),:is(.dark 
-.form-textarea),:is(.dark 
-.form-multiselect),:is(.dark 
+:is(.dark .form-input),:is(.dark
+.form-textarea),:is(.dark
+.form-multiselect),:is(.dark
 .form-select){
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -1153,13 +1153,13 @@ input[type="search"]::-webkit-search-results-decoration {
   color: rgb(156 163 175 / var(--tw-placeholder-opacity));
 }
 
-:is(.dark .form-input)::-moz-placeholder, :is(.dark 
+:is(.dark .form-input)::-moz-placeholder, :is(.dark
 .form-textarea)::-moz-placeholder{
   --tw-placeholder-opacity: 1;
   color: rgb(107 114 128 / var(--tw-placeholder-opacity));
 }
 
-:is(.dark .form-input)::placeholder,:is(.dark 
+:is(.dark .form-input)::placeholder,:is(.dark
 .form-textarea)::placeholder{
   --tw-placeholder-opacity: 1;
   color: rgb(107 114 128 / var(--tw-placeholder-opacity));

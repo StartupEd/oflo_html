@@ -13,6 +13,21 @@
             document.querySelector('html').classList.add('dark');
         }
     </script>
+
+    <script>
+        !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys getNextSurveyStep onSessionId setPersonProperties".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+        posthog.init('phc_pqCMgZ17OZmggH9xHG6mhpv1ScC7xKbpS13EjVsp3qA', {
+            api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only' // or 'always' to create profiles for anonymous users as well
+        })
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GPM2F64PZP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-GPM2F64PZP');
+    </script>
 </head>
 
 <body class="font-inter antialiased bg-indigo-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 tracking-tight">
@@ -63,7 +78,6 @@
                 <div class="max-w-3xl mx-auto">
                     <div
                         class="relative flex items-center justify-between gap-x-2 h-12 bg-gradient-to-b from-white/90 to-white/70 dark:from-gray-700/80 dark:to-gray-700/70 rounded-lg px-3 shadow">
-
                         <!-- Border with dots in corners -->
                         <div class="absolute -inset-1.5 bg-indigo-500/15 dark:bg-gray-800/50 rounded-sm -z-10 before:absolute before:inset-y-0 before:left-0 before:w-[10px] before:bg-[length:10px_10px] before:[background-position:top_center,bottom_center] before:bg-no-repeat before:[background-image:radial-gradient(circle_at_center,theme(colors.indigo.500/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.indigo.500/.56)_1px,transparent_1px)] dark:before:[background-image:radial-gradient(circle_at_center,theme(colors.gray.600/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.gray.600/.56)_1px,transparent_1px)] after:absolute after:inset-y-0 after:right-0 after:w-[10px] after:bg-[length:10px_10px] after:[background-position:top_center,bottom_center] after:bg-no-repeat after:[background-image:radial-gradient(circle_at_center,theme(colors.indigo.500/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.indigo.500/.56)_1px,transparent_1px)] dark:after:[background-image:radial-gradient(circle_at_center,theme(colors.gray.600/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.gray.600/.56)_1px,transparent_1px)]"
                             aria-hidden="true"></div>
@@ -77,8 +91,16 @@
                         </div>
 
                         <!-- Navigation links -->
-                        <nav class="flex justify-center">
+                        <nav class="relative flex justify-center">
                             <ul class="flex items-center sm:gap-x-3 text-sm font-medium">
+                                <li>
+                                    <a class="text-gray-800 dark:text-gray-200 rounded-lg hover:bg-indigo-100 dark:hover:bg-gray-800/30 transition-colors py-1.5 px-3"
+                                        href="products.html">Products</a>
+                                </li>
+                                <li>
+                                    <a class="text-gray-800 dark:text-gray-200 rounded-lg hover:bg-indigo-100 dark:hover:bg-gray-800/30 transition-colors py-1.5 px-3"
+                                        href="solutions.html">Solutions</a>
+                                </li>
                                 <li>
                                     <a class="text-gray-800 dark:text-gray-200 rounded-lg hover:bg-indigo-100 dark:hover:bg-gray-800/30 transition-colors py-1.5 px-3"
                                         href="faq.html">FAQ</a>
@@ -89,6 +111,7 @@
                                 </li>
                             </ul>
                         </nav>
+
 
                         <!-- Dark / Light mode toggle -->
                         <div class="flex-1 flex justify-end">
@@ -103,7 +126,6 @@
                                 <span class="sr-only">Switch to light / dark version</span>
                             </label>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -534,31 +556,31 @@
 
     <script>
         document.getElementById('waitlistForm').addEventListener('submit', function (e) {
-          e.preventDefault();
-          const email = document.getElementById('waitlistEmail').value;
-          // add const domain which uses the current url of the webpage
-          const domain = window.location.href;
+            e.preventDefault();
+            const email = document.getElementById('waitlistEmail').value;
+            // add const domain which uses the current url of the webpage
+            const domain = window.location.href;
 
-          fetch('https://app.oflo.ai/api/v1/waitlist', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ email: email, domain: domain }),
-          })
-            .then(response => response.json())
-            .then(data => {
-              alert(data.message); // You might want to replace this with a more user-friendly notification
-              if (data.message === "Successfully added to waitlist") {
-                document.getElementById('waitlistForm').reset();
-              }
+            fetch('https://app.oflo.ai/api/v1/waitlist', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email: email, domain: domain }),
             })
-            .catch((error) => {
-              console.error('Error:', error);
-              alert('An error occurred. Please try again.');
-            });
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message); // You might want to replace this with a more user-friendly notification
+                    if (data.message === "Successfully added to waitlist") {
+                        document.getElementById('waitlistForm').reset();
+                    }
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    alert('An error occurred. Please try again.');
+                });
         });
-      </script>
+    </script>
 
 </body>
 

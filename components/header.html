@@ -1,17 +1,98 @@
-<header class="absolute top-4 md:top-6 w-full z-30 pb-4 md:pb-6 border-b [border-image:linear-gradient(to_right,transparent,theme(colors.indigo.300/.4),transparent)1] dark:[border-image:linear-gradient(to_right,transparent,theme(colors.indigo.300/.16),transparent)1] shadow-[0_1px_0_0_theme(colors.white/.2)] dark:shadow-none">
-  <div class="px-4 sm:px-6">
-      <div class="max-w-3xl mx-auto">
-          <div class="relative flex items-center justify-between gap-x-2 h-12 bg-gradient-to-b from-white/90 to-white/70 dark:from-gray-700/80 dark:to-gray-700/70 rounded-lg px-3 shadow">
-              <div class="absolute -inset-1.5 bg-indigo-500/15 dark:bg-gray-800/50 rounded-sm -z-10 before:absolute before:inset-y-0 before:left-0 before:w-[10px] before:bg-[length:10px_10px] before:[background-position:top_center,bottom_center] before:bg-no-repeat before:[background-image:radial-gradient(circle_at_center,theme(colors.indigo.500/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.indigo.500/.56)_1px,transparent_1px)] dark:before:[background-image:radial-gradient(circle_at_center,theme(colors.gray.600/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.gray.600/.56)_1px,transparent_1px)] after:absolute after:inset-y-0 after:right-0 after:w-[10px] after:bg-[length:10px_10px] after:[background-position:top_center,bottom_center] after:bg-no-repeat after:[background-image:radial-gradient(circle_at_center,theme(colors.indigo.500/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.indigo.500/.56)_1px,transparent_1px)] dark:after:[background-image:radial-gradient(circle_at_center,theme(colors.gray.600/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.gray.600/.56)_1px,transparent_1px)] aria-hidden="true">
-              </div>
-              <div class="flex-1"></div>
-              <a href="faq.html" class="text-gray-800 dark:text-gray-200 rounded-lg hover:bg-indigo-100 dark:hover:bg-gray-800/30 transition-colors py-1.5 px-3">FAQ</a>
-              <a href="contact.html" class="text-gray-800 dark:text-gray-200 rounded-lg hover:bg-indigo-100 dark:hover:bg-gray-800/30 transition-colors py-1.5 px-3">Contact us</a>
-              <div class="flex-1 flex justify-end">
-                  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGNsYXNzPSJmaWxsLWdyYXktNDAwIGRhcms6ZmlsbC1ncmF5LTUwMCIgZD0iTTkgMEg3djJoMlYwWk0xNC4yOTQgMy4wNTIgMTIuODggMS42MzcgMTEuNDY2IDMuMDVsMS40MTMgMS40MTQgMS40MTUtMS40MTNaTTE2IDdoLTJ2MmgyVjdaTTExLjUzNSAxMy4wMmwxLjQxNSAxLjQxMyAxLjQxNC0xLjQxNS0xLjQxNS0xLjQxMy0xLjQxNCAxLjQxNFpNOSAxNEg3djJoMnYtMlpNMS41NjYgMTIuOTQ4bDEuNDE0IDEuNDE1IDEuNDE1LTEuNDEzLTEuNDE0LTEuNDE1LTEuNDE1IDEuNDEzWk0yIDdIMHYyaDJWN1pNNC40NjUgMy4xMiAzLjA1IDEuNzA3IDEuNjM2IDMuMTJsMS40MTUgMS40MTRMNC40NjUgMy4xMloiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggY2xhc3M9ImZpbGwtZ3JheS04MDAgZGFyazpmaWxsLWdyYXktMjAwIiBkPSJNOCA0QzUuOCA0IDQgNS44IDQgOHMxLjggNCA0IDQgNC0xLjggNC00LTEuOC00LTQtNFoiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L3N2Zz4=" alt="Theme switcher">
-                  <span class="sr-only">Switch to light / dark version</span>
-              </div>
-          </div>
-      </div>
-  </div>
+<!-- Site header -->
+<header
+    class="absolute top-4 md:top-6 w-full z-30 pb-4 md:pb-6 border-b [border-image:linear-gradient(to_right,transparent,theme(colors.indigo.300/.4),transparent)1] dark:[border-image:linear-gradient(to_right,transparent,theme(colors.indigo.300/.16),transparent)1] shadow-[0_1px_0_0_theme(colors.white/.2)] dark:shadow-none">
+    <div class="px-4 sm:px-6">
+        <div class="max-w-5xl mx-auto">
+            <div
+                class="relative flex items-center justify-between gap-x-2 h-12 bg-gradient-to-b from-white/90 to-white/70 dark:from-gray-700/80 dark:to-gray-700/70 rounded-lg px-3 shadow">
+                <!-- Border with dots in corners -->
+                <div class="absolute -inset-1.5 bg-indigo-500/15 dark:bg-gray-800/50 rounded-sm -z-10 before:absolute before:inset-y-0 before:left-0 before:w-[10px] before:bg-[length:10px_10px] before:[background-position:top_center,bottom_center] before:bg-no-repeat before:[background-image:radial-gradient(circle_at_center,theme(colors.indigo.500/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.indigo.500/.56)_1px,transparent_1px)] dark:before:[background-image:radial-gradient(circle_at_center,theme(colors.gray.600/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.gray.600/.56)_1px,transparent_1px)] after:absolute after:inset-y-0 after:right-0 after:w-[10px] after:bg-[length:10px_10px] after:[background-position:top_center,bottom_center] after:bg-no-repeat after:[background-image:radial-gradient(circle_at_center,theme(colors.indigo.500/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.indigo.500/.56)_1px,transparent_1px)] dark:after:[background-image:radial-gradient(circle_at_center,theme(colors.gray.600/.56)_1px,transparent_1px),radial-gradient(circle_at_center,theme(colors.gray.600/.56)_1px,transparent_1px)]"
+                    aria-hidden="true"></div>
+
+                <!-- Site branding -->
+                <div class="flex-1">
+                    <!-- Logo -->
+                    <a href="index.html">
+                        <img class="h-8 logo-image" alt="Oflo.AI" height="42" width="42" />
+                    </a>
+                </div>
+
+                <!-- Navigation links -->
+                <nav class="flex justify-center">
+                    <ul class="flex items-center sm:gap-x-3 text-sm font-medium">
+                        <li class="relative group">
+                            <a class="text-gray-800 dark:text-gray-200 rounded-lg hover:bg-indigo-100 dark:hover:bg-gray-800/30 transition-colors py-1.5 px-3 cursor-pointer">Products</a>
+                            <ul class="absolute left-0 hidden group-hover:block bg-white dark:bg-gray-700 shadow-lg rounded-lg mt-2 w-40">
+                                <li><a class="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-gray-800/30" href="product1.html">OfloGPT</a></li>
+                                <li><a class="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-gray-800/30" href="product2.html">AI Copilot</a></li>
+                                <li><a class="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-gray-800/30" href="product3.html">AI Search</a></li>
+                            </ul>
+                        </li>
+                        <li class="relative group">
+                            <a class="text-gray-800 dark:text-gray-200 rounded-lg hover:bg-indigo-100 dark:hover:bg-gray-800/30 transition-colors py-1.5 px-3 cursor-pointer">Solutions</a>
+                            <ul class="absolute left-0 hidden group-hover:block bg-white dark:bg-gray-700 shadow-lg rounded-lg mt-2 w-40">
+                                <li><a class="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-gray-800/30" href="solution1.html">Education</a></li>
+                                <li><a class="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-gray-800/30" href="solution2.html">Pharma & BioTech</a></li>
+                                <li><a class="block px-4 py-2 text-gray-800 dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-gray-800/30" href="solution3.html">Federal & Defence</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="text-gray-800 dark:text-gray-200 rounded-lg hover:bg-indigo-100 dark:hover:bg-gray-800/30 transition-colors py-1.5 px-3"
+                                href="faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-800 dark:text-gray-200 rounded-lg hover:bg-indigo-100 dark:hover:bg-gray-800/30 transition-colors py-1.5 px-3"
+                                href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Dark / Light mode toggle -->
+                <div class="flex-1 flex justify-end">
+                    <input type="checkbox" name="light-switch" id="light-switch" class="light-switch sr-only" />
+                    <label class="cursor-pointer p-2" for="light-switch">
+                        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-gray-400 dark:fill-gray-500"
+                                d="M9 0H7v2h2V0ZM14.294 3.052 12.88 1.637 11.466 3.05l1.413 1.414 1.415-1.413ZM16 7h-2v2h2V7ZM11.535 13.02l1.415 1.413 1.414-1.415-1.415-1.413-1.414 1.414ZM9 14H7v2h2v-2ZM1.566 12.948l1.414 1.415 1.415-1.413-1.414-1.415-1.415 1.413ZM2 7H0v2h2V7ZM4.465 3.12 3.05 1.707 1.636 3.12l1.415 1.414L4.465 3.12Z" />
+                            <path class="fill-gray-800 dark:fill-gray-200"
+                                d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z" />
+                        </svg>
+                        <span class="sr-only">Switch to light / dark version</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
+
+<style>
+    /* Custom CSS for Dropdown */
+    .group:hover .group-hover\:block {
+        display: block;
+    }
+    .group:hover .group-hover\:hidden {
+        display: none;
+    }
+    .group ul {
+        min-width: 160px; /* Increase width for better appearance */
+        padding: 10px; /* Add padding for better spacing */
+        background: #ffffff; /* Light mode background */
+        background: #2d3748; /* Dark mode background */
+    }
+    .group ul li {
+        margin-bottom: 5px; /* Add space between items */
+    }
+    .group ul li:last-child {
+        margin-bottom: 0; /* Remove margin from last item */
+    }
+    .group ul li a {
+        display: block; /* Ensure block level for padding */
+        padding: 8px 12px; /* Add padding for better touch targets */
+        border-radius: 5px; /* Rounded corners for better aesthetics */
+        transition: background-color 0.3s; /* Smooth background transition */
+    }
+    .group ul li a:hover {
+        background-color: #ebf4ff; /* Light mode hover */
+        background-color: #4a5568; /* Dark mode hover */
+    }
+</style>
